@@ -14,6 +14,10 @@
 		CBF9B7932C1BE91600D249BC /* ARKit_LearnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF9B7922C1BE91600D249BC /* ARKit_LearnTests.swift */; };
 		CBF9B79D2C1BE91600D249BC /* ARKit_LearnUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF9B79C2C1BE91600D249BC /* ARKit_LearnUITests.swift */; };
 		CBF9B79F2C1BE91600D249BC /* ARKit_LearnUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF9B79E2C1BE91600D249BC /* ARKit_LearnUITestsLaunchTests.swift */; };
+		CBF9B7AC2C1BE9A900D249BC /* CustomARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF9B7AB2C1BE9A900D249BC /* CustomARView.swift */; };
+		CBF9B7AE2C1BEB3A00D249BC /* ARViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF9B7AD2C1BEB3A00D249BC /* ARViewRepresentable.swift */; };
+		CBF9B7B02C1D1B4D00D249BC /* ARAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF9B7AF2C1D1B4D00D249BC /* ARAction.swift */; };
+		CBF9B7B22C1D1BB900D249BC /* ARManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF9B7B12C1D1BB900D249BC /* ARManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		CBF9B7982C1BE91600D249BC /* ARKit LearnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ARKit LearnUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBF9B79C2C1BE91600D249BC /* ARKit_LearnUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKit_LearnUITests.swift; sourceTree = "<group>"; };
 		CBF9B79E2C1BE91600D249BC /* ARKit_LearnUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKit_LearnUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CBF9B7AB2C1BE9A900D249BC /* CustomARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomARView.swift; sourceTree = "<group>"; };
+		CBF9B7AD2C1BEB3A00D249BC /* ARViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewRepresentable.swift; sourceTree = "<group>"; };
+		CBF9B7AF2C1D1B4D00D249BC /* ARAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARAction.swift; sourceTree = "<group>"; };
+		CBF9B7B12C1D1BB900D249BC /* ARManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +104,10 @@
 			children = (
 				CBF9B7812C1BE91200D249BC /* ARKit_LearnApp.swift */,
 				CBF9B7832C1BE91200D249BC /* ContentView.swift */,
+				CBF9B7AF2C1D1B4D00D249BC /* ARAction.swift */,
+				CBF9B7B12C1D1BB900D249BC /* ARManager.swift */,
+				CBF9B7AB2C1BE9A900D249BC /* CustomARView.swift */,
+				CBF9B7AD2C1BEB3A00D249BC /* ARViewRepresentable.swift */,
 				CBF9B7852C1BE91500D249BC /* Assets.xcassets */,
 				CBF9B7872C1BE91500D249BC /* Preview Content */,
 			);
@@ -258,6 +270,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBF9B7842C1BE91200D249BC /* ContentView.swift in Sources */,
+				CBF9B7B02C1D1B4D00D249BC /* ARAction.swift in Sources */,
+				CBF9B7AC2C1BE9A900D249BC /* CustomARView.swift in Sources */,
+				CBF9B7AE2C1BEB3A00D249BC /* ARViewRepresentable.swift in Sources */,
+				CBF9B7B22C1D1BB900D249BC /* ARManager.swift in Sources */,
 				CBF9B7822C1BE91200D249BC /* ARKit_LearnApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,6 +441,7 @@
 				DEVELOPMENT_TEAM = TP35L26A5C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "needed to show ARView";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +471,7 @@
 				DEVELOPMENT_TEAM = TP35L26A5C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "needed to show ARView";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
